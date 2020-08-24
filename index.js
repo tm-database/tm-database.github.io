@@ -1,6 +1,3 @@
-import { Octokit } from "https://cdn.pika.dev/@octokit/core";
-
-
 ///////////////
 //    UTIL
 ///////////////
@@ -289,7 +286,7 @@ function generatePointTable(){
 
 async function test(){
 
-    const octokit = new Octokit({ auth: '210bb02dcae4746cbe8ff94c34cbc24ca6ed82f9' });
+    const octokit = new Octokit({auth: 'd801d6512a1bda97bb7db0d15412549ee662d5eb'});
 
     const response = await octokit.request("PUT https://api.github.com/repos/ChocolateChipKookie/chocolatechipkookie.github.io/contents/text1.txt", 
     {
