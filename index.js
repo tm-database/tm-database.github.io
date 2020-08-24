@@ -288,10 +288,10 @@ async function test(){
 
     const octokit = new Octokit({auth: 'd801d6512a1bda97bb7db0d15412549ee662d5eb'});
 
-    const response = await octokit.request("PUT https://api.github.com/repos/ChocolateChipKookie/chocolatechipkookie.github.io/contents/text1.txt", 
+    const response = await octokit.request("PUT https://api.github.com/repos/tm-database/tm-database.github.io/contents/text1.txt", 
     {
-      owner: "ChocolateChipKookie",
-      repo: "chocolatechipkookie.github.io",
+      owner: "tm-database",
+      repo: "tm-database.github.io",
       path: "text1.txt",
       message: "Ejla",
       content: "bXkgbmV3IGZpbGUgY29udGVudHM=",
