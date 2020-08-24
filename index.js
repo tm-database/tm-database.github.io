@@ -289,7 +289,7 @@ function generatePointTable(){
 
 async function test(){
 
-    const octokit = new Octokit({auth: 'd801d6512a1bda97bb7db0d15412549ee662d5eb'});
+    const octokit = new Octokit({auth: '8a2bb937c7a263e41ba35014f08376c691c7835a'});
 
     const response = await octokit.request("PUT https://api.github.com/repos/tm-database/tm-database.github.io/contents/text1.txt", 
     {
