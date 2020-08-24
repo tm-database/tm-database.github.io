@@ -1,0 +1,17 @@
+
+.table{
+    margin: 5%; 
+    width: 90%; 
+    background-color: aqua;
+}
+
+.table-cell{
+    text-align: center; 
+    width: 10%; 
+    background-color: blueviolet;
+}
+
+.table-input{
+    width: 80%; 
+    text-align: center;
+}

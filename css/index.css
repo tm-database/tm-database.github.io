@@ -1,0 +1,160 @@
+/*
+    Global options
+*/
+
+@font-face{
+    font-family: 'tm-default';
+    src: url(../resources/fonts/Prototype.ttf);
+}
+
+body {
+    background-color: #021631;
+    background: url(../resources/mars_slim.png) bottom no-repeat, linear-gradient(#010b19, #010b19, #03214a,#85c7f1);
+    background-size: 100% auto;
+    font-family: 'tm-default';
+    background-attachment: fixed;
+} 
+
+.title-box{
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 20px;
+
+    background: linear-gradient(145deg, #787776, #f5f5f5, #aaaaaa,#ebebeb, #f5f5f5);
+    margin: 5%;
+    padding: 10px;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+
+    color: black;
+}
+
+.options-div{
+    background: linear-gradient(145deg, #787776, #f5f5f5, #aaaaaa,#ebebeb, #f5f5f5);
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 20px;
+
+    margin: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+.options-title{
+    margin-top: 10px;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+
+    padding: 0;
+
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+
+.checkbox-container{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 25px;
+
+    display: block;
+    margin-top: 20px;
+    background-color: rgb(240, 240, 240);
+
+    display: block;
+}
+
+/*
+    Base options
+*/
+
+.base-options{
+    text-align: center;
+    font-size: 22px;
+
+    justify-content: center;
+}
+
+.base-option{
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    min-height: 30px;
+    text-align: left;
+}
+
+.input{
+    float: right;
+    margin: auto;
+    height: 30px;
+    width: 150px;
+}
+
+#generate-table-button{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 20px;
+
+    background-color: rgb(240, 240, 240);
+    margin: 5 auto;
+
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+
+}
+
+
+/*
+    Player list
+*/
+
+.player-list{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 25px;
+
+    display: block;
+    margin-top: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+.player-input-div{
+    margin: 10px;
+}
+
+.player-input{
+    display: inline-block;
+
+    background-color: white;
+
+    width: 45%;
+    height: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.warning-label{
+    display: none;
+    background-color: black; 
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.no-display{
+    display: none;
+}
