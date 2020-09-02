@@ -40,9 +40,87 @@
     "Mons Insurance",
     "Philares"
   ],
-  "player_names": [],
+  "player_names": [
+    "Adi",
+    "Mia"
+  ],
   "metadata": {
-    "current_id": 0
+    "current_id": 1
   },
-  "player_stats": {}    
+  "player_stats": {
+    "Adi": {
+      "games": [
+        {
+          "id": 0,
+          "corporation": "Aphrodite",
+          "rank": 2,
+          "points": 54,
+          "players": 2
+        }
+      ],
+      "best_games": [
+        {
+          "players": 2,
+          "id": 0,
+          "score": 54
+        }
+      ],
+      "fave_corp": {
+        "name": "Aphrodite",
+        "total": 1,
+        "wins": 0
+      },
+      "best_corp": {
+        "name": "Aphrodite",
+        "total": 1,
+        "wins": 0
+      },
+      "most_wins": {
+        "name": "Aphrodite",
+        "total": 1,
+        "wins": 0
+      },
+      "elo": {
+        "value": 1000,
+        "history": []
+      }
+    },
+    "Mia": {
+      "games": [
+        {
+          "id": 0,
+          "corporation": "Aphrodite",
+          "rank": 1,
+          "points": 75,
+          "players": 2
+        }
+      ],
+      "best_games": [
+        {
+          "players": 2,
+          "id": 0,
+          "score": 75
+        }
+      ],
+      "fave_corp": {
+        "name": "Aphrodite",
+        "total": 1,
+        "wins": 1
+      },
+      "best_corp": {
+        "name": "Aphrodite",
+        "total": 1,
+        "wins": 1
+      },
+      "most_wins": {
+        "name": "Aphrodite",
+        "total": 1,
+        "wins": 1
+      },
+      "elo": {
+        "value": 1000,
+        "history": []
+      }
+    }
+  }
 }
