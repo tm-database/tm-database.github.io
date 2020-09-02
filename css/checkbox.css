@@ -1,9 +1,23 @@
+.checkbox-list{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 25px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    background-color: rgb(240, 240, 240);
+    display: block;
+}
+
 .checkbox-label{
     margin-top: 3px;
     margin-bottom: 3px;
     margin: 10px auto;
     display: block;
 
+    line-height: 25px;
     height: 25;
     width: 250px;
     position: relative;
@@ -31,10 +45,6 @@
 
 .checkbox-label:hover input ~ .checkmark {
     background-color: #ccc;
-  }
-
-.container input:checked ~ .checkmark {
-    background-color: #2196F3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */

@@ -1,156 +1,28 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Deimos down</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="css/index.css" rel="stylesheet" type="text/css">
-    <link href="css/index-colonies.css" rel="stylesheet" type="text/css">
-    <link href="css/checkbox.css" rel="stylesheet" type="text/css">
-    <link href="css/table.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8"/>
+    <link href="css/meta.css" rel="stylesheet" type="text/css">    
 </head>
 <body>
-    <div class="title-box">
-        Terraforming Mars score tracker
-    </div>
-
-    <div class="options-div">
-        <div class="options-title">
-            Base options
-        </div>        
-        <div class="base-options">
-            <div class="base-option" id="base-option-date">
-                <label for="date">Date:</label>
-                <input type="date" class="input" id="datepicker">
+    <div class="center-container-wrapper">
+        <div class="center-container">
+            <div class="link-button-wrapper">
+                <button class="link-button" onclick="window.location='/add_game.html';">Add game</button>
             </div>
-
-            <div class="base-option" id="base-option-expansions">
-                Select expansion:
-                <input class="input" type="button" value="Hide" onclick="hideCheckboxContainer(this, 'expansion-checkbox-container')">
-                <div class="checkbox-container" id="expansion-checkbox-container">
-                    <label class="checkbox-label">
-                        <input type="checkbox" checked="true" value="base" disabled="true">Base
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" checked="true" value="colonies" onclick="activateColonies(this)">Colonies
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" checked="true" value="corporate">Corporate era
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" checked="true" value="draft">Draft
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" checked="true" value="prelude">Prelude
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" checked="false" value="turmoil">Turmoil
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" checked="false" value="venus">Venus next
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
+            <div class="link-button-wrapper">
+                <button class="link-button" onclick="window.location='/player_stats.html';">Player stats</button>
             </div>
-
-            <div class="base-option" id="base-option-generations">
-                <label for="generations">Number of generations</label>            
-                <input type="number" class="input" min="1" max="20" id="generations">
+            <div class="link-button-wrapper">
+                <button class="link-button" onclick="window.location='/corporation_stats.html';">Corporation stats</button>
             </div>
-
-            <div class="base-option" id="base-option-players">
-                <label for="player-number">Number of players</label>                
-                <input type="number" class="input" min="1" max="5" id="player-number" value="2" onchange="generatePlayerInputs()">
-                
-                <div class = "player-list" id="player-list">  
-                </div>
-
-                <datalist id="datalist-players">
-                </datalist>
-            </div>
-
-            <div class="" id="base-option-generate">
-                <input type="button" id="generate-table-button" value="Generate table" onclick="generatePointTable()">
+            <div class="link-button-wrapper">
+                <button class="link-button" onclick="window.location='/games.html';">Played games</button>
             </div>
         </div>
     </div>
-
-    <div class="options-div" id="colonies-options">
-        <div class="options-title">
-            Colonies
-        </div>
-        <div class="base-options base-option">
-            Select colonies:
-            <input class="colony-selector-hide-button" type="button" value="Hide" onclick="hideCheckboxContainer(this, 'colony-checkbox-container')">
-            <div class="checkbox-container" id="colony-checkbox-container">
-                <label class="checkbox-label">
-                    <input type="checkbox" onclick="checkboxFunction(this)" id="callisto-checkbox" value="callisto">Callisto
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" class="checkbox" onclick="checkboxFunction(this)" id="ceres-checkbox" value="ceres">Ceres
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" class="checkbox" onclick="checkboxFunction(this)" id="europa-checkbox" value="europa">Europa
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" class="checkbox" onclick="checkboxFunction(this)" id="enceladus-checkbox" value="enceladus">Enceladus
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" class="checkbox" onclick="checkboxFunction(this)" id="ganymede-checkbox" value="ganymede">Ganymede
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" class="checkbox" onclick="checkboxFunction(this)" id="io-checkbox" value="io">Io
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" class="checkbox" onclick="checkboxFunction(this)" id="luna-checkbox" value="luna">Luna
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" class="checkbox" onclick="checkboxFunction(this)" id="miranda-checkbox" value="miranda">Miranda
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" class="checkbox" onclick="checkboxFunction(this)" id="pluto-checkbox" value="pluto">Pluto
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" class="checkbox" onclick="checkboxFunction(this)" id="titan-checkbox" value="titan">Titan
-                    <span class="checkmark"></span>
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" class="checkbox" onclick="checkboxFunction(this)" id="triton-checkbox" value="triton">Triton
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-        </div>
-        <div class="colony-list" id="colony-list">
-            <div class="warning-label" id="colony-warning"></div>
-        </div>
-    </div>
-
-
-    <div class="options-div no-display" id="points">
-        <div class="options-title">
-            Points
-        </div>
-
-        <table class="table" id="points-table">
-        </table>
-    </div>
-
 </body>
-<footer>
-    <script type="module" src="index.js">
-    </script>
-</footer>
 
+<footer>Encrypted
+
+</footer>
